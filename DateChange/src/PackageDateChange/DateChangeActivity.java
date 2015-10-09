@@ -32,9 +32,7 @@ public class DateChangeActivity {
 		
 		long difference = dm.Calculate(month,Date,Year,now);
 		System.out.println(difference);
-		dm.output(difference);
-		
-		
+		dm.output(difference);		
 	    
 	 
 	}

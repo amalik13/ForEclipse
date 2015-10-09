@@ -22,7 +22,7 @@ long diff=0;
 	
 	public void output(long diff)
 	{
-		System.out.println(" It was a sunny day and the temperature averaged 78 degrees. it was "+diff+" days ago");
+		System.out.println(" It was a sunny day and the temperature averaged 78 degrees. it was "+diff+" days from today");
 		
 	}
 	
