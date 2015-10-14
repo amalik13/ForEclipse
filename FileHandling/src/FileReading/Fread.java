@@ -22,5 +22,31 @@ public static void main(String[] args) throws IOException{
 	 String line = reader.readLine();
 	 System.out.println(line);
 	 reader.close();
-}
+	 try{
+	       throw new MyException(2);
+	       // throw is used to create a new exception and throw it.
+	  }
+	 catch(MyException e){
+	    System.out.println(e) ;
+	 }
+	 catch (Exception e) {
+		   System.out.println("someCode");
+		}
+	 finally
+	 {
+		 System.out.println("we are in finally");
+	 }
+	}
+	}
+	class MyException extends Exception{
+	   int a;
+	   MyException(int b) {
+	     a=b;
+	   }
+	   public String toString(){
+	     return ("Exception Number =  "+a) ;
+	  }
+	
+
+
 }
